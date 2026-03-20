@@ -1,0 +1,28 @@
+# B站账号清理工具配置文件
+# 复制此文件为 config.yaml 并填入您的账号信息
+
+bilibili:
+  # SESSDATA: 必需，用于身份验证的Cookie
+  # 获取方式：
+  # 1. 浏览器访问 bilibili.com 并登录
+  # 2. 按F12打开开发者工具
+  # 3. 切换到 Network 标签页
+  # 4. 刷新页面或点击任意链接
+  # 5. 找到任意请求，查看 Request Headers 中的 Cookie
+  # 6. 复制 SESSDATA 的值
+  sessdata: "your_sessdata_here"
+
+  # bili_jct: 必需，CSRF令牌
+  # 获取方式：与SESSDATA相同，从Cookie中获取
+  bili_jct: "your_bili_jct_here"
+
+  # uid: 必需，您的B站用户ID
+  # 获取方式：
+  # 1. 访问您的B站主页：https://space.bilibili.com/
+  # 2. URL中的数字就是您的uid，例如：https://space.bilibili.com/12345678
+  # 3. 复制数字部分即可
+  uid: 12345678
+
+settings:
+  # 是否跳过确认提示（谨慎使用）
+  skip_verify: false
