@@ -59,16 +59,16 @@ python3 -m venv venv
 
 ### 安装依赖
 
-创建虚拟环境后，需要安装项目依赖：
+创建虚拟环境后，使用 `requirements.txt` 安装项目依赖：
 
 **Windows:**
 ```bash
-venv\Scripts\pip install requests pyyaml
+venv\Scripts\pip install -r requirements.txt
 ```
 
 **Linux/Mac:**
 ```bash
-venv/bin/pip install requests pyyaml
+venv/bin/pip install -r requirements.txt
 ```
 
 ### 激活虚拟环境（可选）
@@ -172,20 +172,11 @@ talk/
 
 ## 依赖库
 
+依赖项已定义在 `requirements.txt` 文件中：
+
+- `bilibili-api` - B站API辅助库（BVID/AV号转换）
 - `requests` - HTTP请求
-- `PyYAML` - 配置文件解析
-- `bilibili-api` - B站API辅助库（用于BVID/AV号转换）
-
-### 安装依赖
-
-**使用虚拟环境安装：**
-```bash
-# Windows
-venv\Scripts\pip install requests pyyaml bilibili-api
-
-# Linux/Mac
-venv/bin/pip install requests pyyaml bilibili-api
-```
+- `pyyaml` - 配置文件解析
 
 ## 许可证
 
